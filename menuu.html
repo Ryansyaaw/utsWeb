@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calli</title>
+    <link rel="stylesheet" href="menuu.css">
+</head>
+
+<body>
+    <div class="main">
+        <nav class="navbar">
+            <h3>Calli</h3>
+            <ul>
+                <li><a href="page1.html">Home</a></li>
+                <li><a href="menuu.html">Menu</a></li>
+                <li><a href="moments.html">Moments</a></li>
+            </ul>
+        </nav>
+        <div class="btn-box">
+            <button id="btn1" onclick="openDrink()">Drink</button>
+            <br>
+            <button id="btn2" onclick="openFood()">Food</button>
+        </div>
+        <div class="content" id="content1">
+            <div class="title">
+                <h1>Signature Drink</h1>
+            </div>
+            <div class="top-container">
+                <div class="container1">
+                    <img src="capucino.png" alt="">
+                    <h3>Cappucino</h3>
+                    <h3>IDR 18K</h3>
+                </div>
+                <div class="container2">
+                    <img src="redvelvet.png" alt="">
+                    <h3>Red Velvet</h3>
+                    <h3>IDR 18K</h3>
+                </div>
+                <div class="container1">
+                    <img src="coklat.png" alt="">
+                    <h3>Chocolatte</h3>
+                    <h3>IDR 18K</h3>
+                </div>
+            </div>
+            <br><br><br><br><br><br><br>
+            <div class="menu-container">
+                <h1>Drink Menu</h1>
+                <aside>
+                    <h3>Moccacino</h3>
+                    <h3>Americano</h3>
+                    <h3>Cafe Latte</h3>
+                    <h3>Taro</h3>
+                    <h3>Matcha Latte</h3>
+                    <h3>Regal Milk</h3>
+                    <h3>Milk Tea</h3>
+                </aside>
+            </div>
+            </aside>
+            <div class="harga-container">
+                <aside>
+                    <h3>..............................................................15k</h3>
+                    <h3>..............................................................15k</h3>
+                    <h3>..............................................................15k</h3>
+                    <h3>..............................................................15k</h3>
+                    <h3>..............................................................15k</h3>
+                    <h3>..............................................................15k</h3>
+                    <h3>..............................................................15k</h3>
+                </aside>
+            </div>
+        </div>
+        <div class="content" id="content2">
+            <div class="title">
+                <h1>Signature Food</h1>
+            </div>
+            <div class="top-container">
+                <div class="container1">
+                    <img src="currychckn.png" alt="">
+                    <h3>Indian Curry Chicken</h3>
+                    <h3>IDR 18K</h3>
+                </div>
+                <div class="container2">
+                    <img src="sweetkrg.png" alt="">
+                    <h3>Sweet Honey Kaarage</h3>
+                    <h3>IDR 18K</h3>
+                </div>
+                <div class="container1">
+                    <img src="smyngkrg.png" alt="">
+                    <h3>Samyang Kaarage</h3>
+                    <h3>IDR 18K</h3>
+                </div>
+            </div>
+            <br><br><br><br><br><br><br><br>
+            <div class="menu-container">
+                <h1>Food Menu</h1>
+                <aside>
+                    <h3>French Fries</h3>
+                    <h3>Onion Rings</h3>
+                    <h3>Calli Plater</h3>
+                    <h3>Cookies</h3>
+                    <h3>Donut</h3>
+                    <h3>Croffle</h3>
+                    <h3>Croissant</h3>
+                </aside>
+            </div>
+            </aside>
+            <div class="harga-container">
+                <aside>
+                    <h3>..............................................................15k</h3>
+                    <h3>..............................................................15k</h3>
+                    <h3>..............................................................15k</h3>
+                    <h3>..............................................................15k</h3>
+                    <h3>..............................................................15k</h3>
+                    <h3>..............................................................15k</h3>
+                    <h3>..............................................................15k</h3>
+                </aside>
+            </div>
+        </div>
+    </div>
+    <script>
+        var content1 = document.getElementById("content1");
+        var content2 = document.getElementById("content2");
+        var btn1 = document.getElementById("btn1");
+        var btn2 = document.getElementById("btn2");
+
+        function openDrink() {
+            content1.style.transform = "translateX(0px)";
+            content2.style.transform = "translateX(10000px)";
+            btn1.style.color = "white"
+            btn1.style.backgroundColor = "rgb(29, 27, 27)"
+            btn2.style.color = "black"
+            btn2.style.backgroundColor = "white"
+        }
+
+        function openFood() {
+            content1.style.transform = "translateX(10000px)";
+            content2.style.transform = "translateX(0px)";
+            btn2.style.color = "white"
+            btn2.style.backgroundColor = "rgb(29, 27, 27)"
+            btn1.style.color = "black"
+            btn1.style.backgroundColor = "white"
+        }
+
+    </script>
+</body>
+
+</html>

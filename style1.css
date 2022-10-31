@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200, 300, 400, 500, 600, 700, 800, 900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+body {
+    background: #333;
+    color: #fff;
+    height: 100vh;
+    line-height: 1.6;
+    overflow: hidden;
+  }
+  
+  .main {
+    width: 100%;
+    height: 100%;
+  }
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background: rgba(0,0,0,0.7);
+  }
+  
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: right;
+  }
+  
+  .navbar ul li {
+    margin: 0 1rem;
+    padding: 1rem;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+  }
+
+  .navbar a:hover {
+    color: skyblue;
+  }
+  .navbar h3{
+    margin-top: 10px;
+    margin-left: 30px;
+    letter-spacing: 5px;
+    font-size: 25px;
+  }
+  
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: center;
+  }
+  #home{
+    text-align: center;
+  }
+  #home h1{
+    font-size: 60px;
+    text-align: center;
+  }
+  .contact{
+    position: absolute;
+    margin-top: 550px;
+    margin-left: 1300px;
+  }
+  .contact li{
+    list-style-type: none;
+    padding-top: 10px;
+    
+  }
+  .contact i{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+  }
+  section#home {
+    background: url('bg.png');
+  }
